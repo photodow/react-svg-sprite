@@ -4,7 +4,8 @@
   "description": "A basic react component that will create an svg sprite based on an array of svg files.",
   "main": "svg-sprite.js",
   "scripts": {
-    "prepublish": "babel src --out-dir ."
+    "build": "babel src --out-dir .",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
