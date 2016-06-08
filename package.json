@@ -1,0 +1,25 @@
+{
+  "name": "react-svg-sprite",
+  "version": "1.0.0",
+  "description": "A basic react component that will create an svg sprite based on an array of svg files.",
+  "main": "svg-sprite.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/photodow/react-svg-sprite.git"
+  },
+  "keywords": [
+    "svg",
+    "sprite",
+    "react",
+    "component"
+  ],
+  "author": "James Dow",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/photodow/react-svg-sprite/issues"
+  },
+  "homepage": "https://github.com/photodow/react-svg-sprite#readme"
+}
