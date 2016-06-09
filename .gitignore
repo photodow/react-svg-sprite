@@ -1,2 +1,4 @@
 node_modules
+npm-debug.log
 /svg-sprite.js
+/symbol.js
