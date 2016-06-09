@@ -1,6 +1,6 @@
 {
   "name": "react-svg-sprite",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A basic react component that will create an svg sprite based on an svg array.",
   "main": "svg-sprite.js",
   "scripts": {
