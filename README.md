@@ -67,7 +67,7 @@ export default class BuildingBlock extends React.Component {
 }
 ```
 
-Your output would look like something like this...
+Your output would look something like this...
 ```html
 <svg class="weather-icons" style="display:none;">
     <symbol id="cloud" viewBox="0 0 32 32" class="weather-icon">
