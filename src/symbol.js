@@ -20,14 +20,15 @@ export default class Symbol extends React.Component {
         const pattern = new RegExp(`${name}=(?:"|')([^("|')]*)(?:"|')`);
 
         if (!value) {
-            value = pattern.test(svg) ? svg.match(pattern)[1] : null;
+            let svgOpenTag = svg.startsWith('<svg') ? svgOpenTag.match(/<svg[^>]*>/)[0] : null;
+            value = svgOpenTag && pattern.test(svg) ? svgOpenTag.match(pattern)[1] : null;
         }
 
         return value;
     }
 
     extractChildren (svg) {
-        return {__html: svg.replace(/(<svg[^>]*>)|(<\/svg>)/g, '')}; // remove svg tags
+        return {__html: svg.replace(/<svg[^>]*>|<\/svg>/g, '')}; // remove svg tags
     }
 }
 
