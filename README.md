@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/react-svg-sprite.svg)](https://badge.fury.io/js/react-svg-sprite)
+
 # React SVG Sprite Component
 A basic react component that will create an `svg` sprite based on an `svg` `array`.
 
