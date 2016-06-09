@@ -21,7 +21,7 @@ export default class Symbol extends React.Component {
 
         if (!value) {
             let svgOpenTag = svg.startsWith('<svg') ? svg.match(/<svg[^>]*>/)[0] : null;
-            value = svgOpenTag && pattern.test(svg) ? svgOpenTag.match(pattern)[1] : null;
+            value = svgOpenTag && pattern.test(svgOpenTag) ? svgOpenTag.match(pattern)[1] : null;
         }
 
         return value;
