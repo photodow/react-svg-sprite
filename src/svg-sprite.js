@@ -6,12 +6,13 @@ export default class SvgSprite extends React.Component {
         const {symbols, style, ...other} = this.props;
 
         return (
-            <svg {...other} style={style} xmlns="http://www.w3.org/2000/svg">
+            <svg {...other} style={style}
+                xmlns="http://www.w3.org/2000/svg">
                 {symbols.map(symbol => {
-                    return <Symbol symbol={symbol} />;
+                    return <Symbol key={symbol.name} symbol={symbol} />;
                 })}
             </svg>
-        );;
+        );
     }
 }
 

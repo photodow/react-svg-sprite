@@ -3,6 +3,7 @@
 # React SVG Sprite Component
 A basic react component that will create an `svg` sprite based on an `svg` `array`.
 
+## installation
 `npm install react-svg-sprite --save`
 
 ## How to Use
