@@ -14,7 +14,7 @@ This component only requires an `array` of your given symbols with `name`, and `
 import React from 'react'
 import SvgSprite from 'react-svg-sprite'
 
-export default class BuildingBlock extends React.Component {
+export default class MyComponent extends React.Component {
     render () {
         return (
             <SvgSprite
@@ -47,7 +47,7 @@ Given your component looks like this...
 import React from 'react'
 import SvgSprite from 'react-svg-sprite'
 
-export default class BuildingBlock extends React.Component {
+export default class MyComponent extends React.Component {
     render () {
         return (
             <SvgSprite
