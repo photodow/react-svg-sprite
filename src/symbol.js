@@ -20,7 +20,7 @@ export default class Symbol extends React.Component {
         const pattern = new RegExp(`${name}=(?:"|')([^("|')]*)(?:"|')`);
 
         if (!value) {
-            let svgOpenTag = svg.startsWith('<svg') ? svgOpenTag.match(/<svg[^>]*>/)[0] : null;
+            let svgOpenTag = svg.startsWith('<svg') ? svg.match(/<svg[^>]*>/)[0] : null;
             value = svgOpenTag && pattern.test(svg) ? svgOpenTag.match(pattern)[1] : null;
         }
 
