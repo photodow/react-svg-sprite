@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types'
 import Symbol from './symbol';
 
 export default class SvgSprite extends React.Component {
@@ -17,10 +18,10 @@ export default class SvgSprite extends React.Component {
 }
 
 SvgSprite.propTypes = {
-    symbols: React.PropTypes.arrayOf(
-        React.PropTypes.object.isRequired
+    symbols: PropTypes.arrayOf(
+        PropTypes.object.isRequired
     ).isRequired,
-    style: React.PropTypes.object
+    style: PropTypes.object
 };
 
 SvgSprite.defaultProps = {

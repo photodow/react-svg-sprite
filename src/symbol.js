@@ -1,4 +1,5 @@
-import React  from 'react';
+import React from 'react';
+import PropTypes from 'prop-types'
 
 export default class Symbol extends React.Component {
     render () {
@@ -33,10 +34,10 @@ export default class Symbol extends React.Component {
 }
 
 Symbol.propTypes = {
-    symbol: React.PropTypes.shape({
-        svg: React.PropTypes.string.isRequired,
-        name: React.PropTypes.string,
-        viewBox: React.PropTypes.string,
-        className: React.PropTypes.string
+    symbol: PropTypes.shape({
+        svg: PropTypes.string.isRequired,
+        name: PropTypes.string,
+        viewBox: PropTypes.string,
+        className: PropTypes.string
     }).isRequired
 };
