@@ -5,7 +5,8 @@
   "main": "svg-sprite.js",
   "scripts": {
     "build": "babel src --out-dir .",
-    "prepublish": "npm run build"
+    "prepublishOnly": "npm run build",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -24,7 +25,8 @@
   },
   "homepage": "https://github.com/photodow/react-svg-sprite#readme",
   "dependencies": {
-    "react": "^15.1.0"
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0"
   },
   "devDependencies": {
     "babel-cli": "^6.9.0",
